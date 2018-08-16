@@ -1,12 +1,13 @@
 /**
  * react-native-parabolic
  * @author Lei
- * @repo https://github.com/stoneWeb/react-native-parabolic
+ * @repo https://github.com/fengzie/react-native-parabolic
  */
 'use strict';
 
- import React, { Component } from 'react'
- import PropTypes from 'prop-types'
+import React, { Component } from 'react'
+const { ViewPropTypes } = ReactNative = require('react-native');
+const PropTypes = require('prop-types');
  import {
    View,
    Animated
@@ -19,7 +20,7 @@
      animateEnd: PropTypes.func,
      curvature: PropTypes.number,
      duration: PropTypes.number,
-     style: View.propTypes.style
+     style: ViewPropTypes.style
    }
 
    static defaultProps = {
